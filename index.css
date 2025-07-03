@@ -1,45 +1,129 @@
 body {
     align-items: center;
     color: blue;
-background: #000000;
-background: -moz-linear-gradient(top, #000000 0%, #414141 74%, #8e9fb3 100%);
-background: -webkit-linear-gradient(top, #000000 0%, #414141 74%, #8e9fb3 100%);
-background: linear-gradient(to bottom, #000000 0%, #414141 74%, #8e9fb3 100%);
+ background-image: url(img/pix.jpg);
+background-size: cover;
+background-attachment: fixed;
+      mix-blend-mode: darken;
+      isolation:auto;
     margin: auto;
+    overflow: hidden;
+    
+
  
 }
-.numb{
+
+* {
+        mix-blend-mode:darken;
+}
+
+.numb {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
     flex-wrap: nowrap;
-  gap: 10px;
+    gap: 10px;
   height: 100vh;
+-moz-transform: skew(4deg, -3.2deg);
+-webkit-transform: skew(4deg, -3.2deg);
+-o-transform: skew(4deg, -3.2deg);
+-ms-transform: skew(4deg, -3.2deg);
+transform: skew(4deg, -3.2deg);
 }
+
+.screen {
+  
+}
+
 .btn1, .btn2, .btn3 {
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.075);
     align-content: center;
     float: left;
-    width: 160px;
-    height: 220px;
+    width: 25%;
+    height: 50%;
+    font-size: 60px;
     color: rgb(5, 5, 5);
     background-color: rgb(255, 255, 255);
     text-align: center;
+    background-position: center;  
+z-index: 0;
+
+}
+
+.screen  {
+ background-image: url(img/pix.jpg);
+ background-size: cover;
+      mix-blend-mode: darken;
+      isolation:auto;
+      background-attachment: fixed;
+z-index: 2;
+}
+
+.out {
+  max-width: 60%;
+  margin: auto;
+  height: 20%;
 }
 
 .btn1 {
-background-image: url(img/music.png);
-background-size: cover;
+background-image: url(img/music2.jpg);
+background-size:cover;
 }
 
 .btn2 {
-background-image: url(img/films.jpg);
+background-image: url(img/films2.jpg);
 background-size: cover;
 }
 
 .btn3 {
-background-image: url(img/more.jpg);
+background-image: url(img/more2.jpg);
 background-size: cover;
+}
+
+.btn1 .out:hover {
+opacity: 85%;
+cursor:pointer;
+background-size:cover;
+  border-bottom: 4px solid;
+filter:blur(1.5px);
+}
+
+.btn2 .out:hover {
+opacity: 85%;
+cursor:pointer;
+filter:blur(1.5px);
+background-size: cover;
+  border-bottom: 4px solid;
+}
+
+.btn3 .out:hover {
+opacity: 85%;
+cursor:pointer;
+filter:blur(1.5px);
+background-size: cover;
+  border-bottom: 4px solid;
+}
+
+.qc {
+background-image: url(img/qc.jpg);
+background-position: center;
+background-size:cover;
+position:absolute;
+height: 46px;
+width: 322px;
+top: 20px;
+left: 40px;
+z-index: 4;
+-moz-transform: skew(4deg, -3.2deg);
+-webkit-transform: skew(4deg, -3.2deg);
+-o-transform: skew(4deg, -3.2deg);
+-ms-transform: skew(4deg, -3.2deg);
+transform: skew(4deg, -3.2deg);
+}
+
+
+.pixs {
+
 }
