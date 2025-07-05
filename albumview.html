@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>albumview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--script for dropdown system-->
+<script>
+    
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function gSlides() {
+  window.open("https://docs.google.com/presentation/");
+}
+
+function gDrive() {
+  window.open("https://drive.google.com/drive/");
+}
+
+function gMail() {
+  window.open("https://mail.google.com/mail/");
+}
+
+function gSearch() {
+  window.open("https://google.com/");
+}
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function crosCalc() {
+  window.open("https://calculator.apps.chrome/");
+}
+
+function ccsdInstructure() {
+  window.open("https://msccsd.instructure.com/");
+}
+	
+function flockIm() {
+  window.open("https://web.flock.com/");
+}
+</script>
+<!--style for dropdown/windowing system-->
+<style>
+
+	[id^=mzodal] {
+		display: none;
+		position: fixed;
+		min-height: 10em;
+		min-width: 5em;
+		font-family: 'Google Sans', Roboto, Arial, sans-serif;
+		color: #fff;
+		background-color: #000;
+		height: 100%;
+		Width: 100%;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+
+	}
+
+	input[type=checkbox] {
+		position: absolute;
+		clip: rect(0 0 0 0);
+	}
+
+	#mzodalCREDITS:target {
+		display: block;
+		z-index: 99998;
+			min-height: 3em;
+			min-width: 5em;
+			font-family: 'Google Sans', Roboto, Arial, sans-serif;
+			color: #fff;
+			background-color: #000;
+			height: 40%;
+			Width: 60%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+	}
+
+	[id^=mzodal] a {
+		float: right;
+	}
+
+	[id^=mzodal]:target {
+		display: block;
+		z-index: 99998;
+	}
+
+	.bagel {
+		float: right !important;
+		top: 0px;
+	}
+
+
+ul, #myUL {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 48px;
+}
+
+#myUL {
+  margin: 6%;
+  padding: 0;
+  color: inherit;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+
+}
+
+.caret::before {
+  font-size: small;
+  vertical-align:middle;
+    content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  color: inherit;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+
+	/* Style the button */
+	button {
+		border: none;
+		background-color: transparent;
+
+	}
+
+    .ipage::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .ipage {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+</head>
+<body>
+
+<!--test buttons, remove when you apply to music page-->
+	<ul class="sample1" style="overflow: auto;">
+		<li title="frame01"><a href="#mzodal1">0001</a></li>
+		<li title="frame02"><a href="#mzodal2">0002</a></li>
+		<li title="frame03"><a href="#mzodal3">0003</a></li>
+		<li title="frame04"><a href="#mzodal4">0004</a></li>
+		<li title="frame07"><a href="#mzodal7">0005</a></li>
+        <li title="frame05"><a href="#mzodal5">0006</a></li>
+        <li title="frame06"><a href="#mzodal6">0007</a></li>
+        <li title="frameSG"><a href="#mzodalSG">00SG</a></li>
+	</ul>
+
+
+    <!--windowing system-->
+    <div id="mzodal1"><a style="z-index: 99998; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=15BrbsPVSkQveWPzfeBN21LiOohuczPBd#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>2021 </div>
+    <div id="mzodal2"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=1xu6GExsh3VIlJc9YOXi1sW6Dkki6Olbx#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>2022 </div>
+    <div id="mzodal3"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=1ymRRCwivAHN6aLZO0VaoNGQUraA5jplr#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>2023 </div>
+	<div id="mzodal4"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=14qmJA63-zvSdrTmHVv9wLOoD0QBTAAaX#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>2024 </div>
+    <div id="mzodal5"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=1ExqinUeqvXbyh2A1Fx14LdmG7sfg4AD9#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>Photoshop </div>	
+    <div id="mzodal6"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=1BFmC-0mnfXjWj1ucEkSOHI2lRNgtOgQA#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>Film Scans </div>
+	<div id="mzodal7"><a style="z-index: 99999; position: fixed; top: -1px; right: 0; cursor:pointer;" href="#">×</a><iframe class="ipage" src="https://drive.google.com/embeddedfolderview?id=1D_iX-y5l-0zjJzd-5je9g-yKvn3p0t5-#grid" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed;  left:0; bottom:0; right:0; width:100%; height:97%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>2025 </div>	
+    <div id="mzodalSG"><a style="z-index: 99999; position: fixed; top: -2px; right: 0; cursor:pointer;" href="#">×</a><ul id="myUL">
+  <li><span class="caret">Albums</span>
+    <ul class="nested">
+      <li><span class="caret">Stageplay</span>
+        <ul class="nested">
+          <li> <a onclick="ccsdInstructure()">Canvas</a></li>
+          <li> <a onclick="crosCalc()">ChromeOS Calculator</a></li>
+        </ul>
+      </li>
+      <li><span class="caret">Olfactory</span>
+        <ul class="nested">
+          <li> <a onclick="gSlides()">Slides</a></li>
+          <li> <a onclick="gDocs()">Docs</a></li>
+          <li> <a onclick="gDrive()">Drive</a></li>
+          <li> <a onclick="gMail()">Gmail</a></li>
+          <li> <a onclick="gSearch()">Search</a></li>
+        </ul>
+      </li>
+ <li><span class="caret">Experience Expo (Music for Runway Shows)</span>
+        <ul class="nested">
+          <li> <a onclick="flockIm()">Flock Messenger</a></li>
+        </ul>
+      </li>
+       <li><span class="caret">s'GR</span>
+        <ul class="nested">
+          <li> <a onclick="flockIm()">Flock Messenger</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+    <li><span class="caret">EPs</span>
+    <ul class="nested">
+      <li><span class="caret">Epilogue</span>
+        <ul class="nested">
+          <li> <a onclick="ccsdInstructure()">Her politics/heretic</a></li>
+          <li> <a onclick="crosCalc()">Tolerance</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><span class="caret">Singles</span>
+    <ul class="nested">
+      <li><span class="caret">Education</span>
+        <ul class="nested">
+          <li> <a onclick="ccsdInstructure()">Canvas</a></li>
+          <li> <a onclick="crosCalc()">ChromeOS Calculator</a></li>
+        </ul>
+      </li>
+      <li><span class="caret">Google</span>
+        <ul class="nested">
+          <li> <a onclick="gSlides()">Slides</a></li>
+          <li> <a onclick="gDocs()">Docs</a></li>
+          <li> <a onclick="gDrive()">Drive</a></li>
+          <li> <a onclick="gMail()">Gmail</a></li>
+          <li> <a onclick="gSearch()">Search</a></li>
+        </ul>
+      </li>
+ <li><span class="caret">Social</span>
+        <ul class="nested">
+          <li> <a onclick="flockIm()">Flock Messenger</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li></li>
+</ul>
+Contact LCTapps </div>
+
+</body>

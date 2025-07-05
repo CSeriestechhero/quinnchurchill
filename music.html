@@ -1,18 +1,674 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
     	<script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <style>
+
+ul, #myUL {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 48px;
+  z-index: 101;
+}a
+#myUL a, li{
+    z-index: 99999;
+}
+
+.applinks {
+    font-size: 35px;
+    line-height: none;
+    font-weight: 700;
+    
+}
+
+#myUL {
+  margin: 6%;
+  padding: 0;
+  color: inherit;
+  -moz-transform: skew(4deg, -3.2deg);
+-webkit-transform: skew(4deg, -3.2deg);
+-o-transform: skew(4deg, -3.2deg);
+-ms-transform: skew(4deg, -3.2deg);
+transform: skew(4deg, -3.2deg);
+}
+
+#myUL a {
+        text-decoration: none !important;
+        color: inherit;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+
+}
+
+.caret::before {
+  font-size: small;
+  vertical-align:middle;
+    content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  color: inherit;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+[id^=quitmz] {
+    font-size: 3em;
+    top: 2px;
+    right: 15px;
+    z-index: 99998;
+    position: fixed;
+    cursor:pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+	[id^=mzodal] {
+		display: none;
+		position: fixed;
+
+		font-family: 'Sahadeva Regular', Roboto, Arial, sans-serif;
+
+		background-color: #ffffff;
+  		color: #000;
+        overflow-y: scroll;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+	input[type=checkbox] {
+		position: absolute;
+		clip: rect(0 0 0 0);
+	}
+
+	#mzodalCREDITS:target {
+		display: block;
+		z-index: 100;
+			min-height: 3em;
+			min-width: 5em;
+			font-family: 'Google Sans', Roboto, Arial, sans-serif;
+			color: #fff;
+			background-color: #000000;
+			height: 40%;
+			Width: 60%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+	}
+
+	[id^=mzodal] a {
+		float: inherit;
+	}
+
+	[id^=mzodal]:target {
+		display: block;
+		z-index: 100;
+        background-color: #000;
+                  background-image: url('img/pix.jpg');
+  background-size: cover;
+  isolation: isolate;
+  background-attachment: fixed;
+	}
+
+    	[id^=mzodal]:target ul {
+		
+    
+	}
+
+	.bagel {
+		float: right !important;
+		top: 0px;
+	}
+
+	/* Style the button */
+	button {
+		border: none;
+		background-color: transparent;
+
+	}
+
+    .ipage::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .ipage {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+
 </head>
 <body>
         <div class="screen">
-        <div class="qc"></div>
-    <div class="numb">
+        <div style="cursor:pointer;" onclick="window.location.href = 'index.html'" class="qc"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://raw.githubusercontent.com/CSeriestechhero/kiosk-setup/main/services/redir/banish.js"></script>
+
+<ul id="myUL">
+    <br>
+  <li><span class="caret">Albums</span>
+    <ul class="nested">
+      <li><span class="caret"><a href="#mzodalSG">Stageplay</a></span>
+
+      </li>
+      <li><span class="caret"><a href="#mzodal1">Olfactory</a></span>
+
+      </li>
+            <li><span class="caret"><a href="#mzodal2">Experience Expo (Music for Runway Shows)</a></span>
+
+      </li>
+            <li><span class="caret"><a href="#mzodal3">s'GR</a></span>
+
+
+    </ul>
+  </li>
+    <li><span class="caret">EPs</span>
+    <ul class="nested">
+      <li><span class="caret">Epilogue</span>
+        <ul class="nested">
+            <li></li>
+      <li><span class="caret">Her politics/heretic</span>
+        <ul class="nested">
+          <li class="applinks">  
+            <a onclick="window.open('https://open.spotify.com/track/2Gc9nAykJV6X8qrJ446sRA?si=6f232da473d24afa')">spotify</a> 
+            <a onclick="window.open('https://music.apple.com/us/song/her-politics-heretic/1729340160')">apple</a> 
+            <a onclick="window.open('https://youtu.be/_2ojQADQeUY?si=iJ8lNmXuQuROAUns')">youtube</a>
+        </li>
+                  </ul>
+      </li>
+      <li><span class="caret">Tolerance</span>
+        <ul class="nested">
+          <li class="applinks">  
+             <a onclick="window.open('https://open.spotify.com/track/56meKGdbf9REcL20OvtAcl?si=395c14c5858d4add')">spotify</a>
+             <a onclick="window.open('https://music.apple.com/us/song/tolerance/1729340161')">apple</a> 
+             <a onclick="window.open('https://youtu.be/uo4IfLJtHzw?si=ADTJwjIYxKkxDb-w')">youtube</a>
+            </li>
+                  </ul>
+      </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><span class="caret">Singles</span>
+    <ul class="nested">
+      <li><span class="caret">Pagan</span>
+        <ul class="nested">
+          <li class="applinks"> 
+             <a onclick="window.open('https://open.spotify.com/album/6eXTOp7SLngBKexIPC2pS1?si=YF_qecTnQt-uFPcFqn_4EA')">spotify</a>
+             <a onclick="window.open('https://music.apple.com/us/album/pagan-single/1785373688')">apple</a> 
+             <a onclick="window.open('https://youtu.be/vWysN4JuXUU?si=eGx7Odct3drCmZKs')">youtube</a>
+          </li>
+
+        </ul>
+      </li>
+      <li><span class="caret">Angel</span>
+        <ul class="nested">
+          <li class="applinks">
+             <a onclick="window.open('https://open.spotify.com/album/3uS35z63qxOjJ8HetzeZc7?si=JBZ5KY17RxuaSzgwPaGfeQ')">spotify</a>
+             <a onclick="window.open('https://music.apple.com/us/album/angel-single/1773470524')">apple</a> 
+             <a onclick="window.open('https://youtu.be/xsx_XKx705I?si=lO4jL6Pr9RdVDCvR')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">Mime act</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/album/3yqUNiDbqWgjceQq78izwB?si=4YyJ18EfQAyfsBQlo5GqRA')">spotify</a>
+             <a onclick="window.open('https://music.apple.com/us/album/mime-act-single/1767553518')">apple</a> 
+             <a onclick="window.open('https://youtu.be/sFxgzJ_fpAQ?si=tCO6y5PiR99SRY8X')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">Nation</span>
+        <ul class="nested">
+          <li class="applinks">
+             <a onclick="window.open('https://open.spotify.com/album/3bRwqQJlnPcOweN9yplaTl?si=6zmCv_4SQWqFWojAaMHI6g')">spotify</a>
+             <a onclick="window.open('https://music.apple.com/us/album/nation-single/1755818418')">apple</a> 
+             <a onclick="window.open('https://youtu.be/v1S_kqoH1P8?si=fdu0WlVI1g_jp6Ic')">youtube</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+  <li></li>
+</ul>
+    <!--windowing system-->
+    <div id="mzodal1"><a id="quitmz" href="#">×</a>
+    <ul id="myUL">
+  <li><span class="caret caret-down">Olfactory</span>
+    <ul class="nested active">
+      <li class="applinks">
+<a onclick="window.open('https://open.spotify.com/album/1BRE4Xp1Gy2btApvQ1i9WS?si=-Ad0ObIJTheWEscWmOYILg')">spotify</a> <a onclick="window.open('https://music.apple.com/us/album/olfactory/1728404469')">apple</a> <a onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_nqPNdUJtZgRkJvNihRFWojmQmB8sKMy-I&si=JmwbLyq49HmOkOWv')">youtube</a>
+      </li>
+            <li><span class="caret">Our love is not in our interest</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/7i0qwN0VScbo5vD4a0NQkN?si=d0c0ec6312d54947')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/our-love-is-not-in-our-interest/1728404470')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=VpUpEXf8sXA&si=rX-xFlXm3rTzg002')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+      <li><span class="caret">File abuse</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/1it8b6l7yNOniTCFXJYIW5?si=aa7a0db40cf546fc')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/file-abuse/1728404471')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=JEAxTBm6MiI&si=udpDl0npw5NlOnwr')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+ <li><span class="caret">Speechless romantic, lustful idlest</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/32RzY72tRrWiaYf1fGabvC?si=f91845c9137149b8')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/speechless-romantic-lustful-idlest/1728404472')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=AgpsGx3-snc&si=_-E93LhejG-CNIcf')">youtube</a>
+          </li>
+        </ul>
+      </li>
+       <li><span class="caret">first day of spring (2021)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3gbRxvWLOlSf8uJ8QIJDa2?si=86390e4d58574d86')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/first-day-of-spring-2021/1728404473')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=GBZDvkYGzIc&si=PqpPuu5D6lZjMefV')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">Boy w/ scissors)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/0EHLBuzTHatem5R28sKqc5?si=183dbf0d5aff483e')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/boy-w-scissors/1728404474')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=pxiysMtrtF0&si=4ZbsUz4DT6SN6OPl')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Worst</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/4WdsNg9yhbGrL4As0JWtYg?si=41d0964911df4535')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/worst/1728404475')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=LZ1GeO2peTU&si=v1SFKBZm9cmpKiL7')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Untitled</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/0DRZGLYcxYPgPDYEUyhK3M?si=a75ff9c17ada4784')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/untitled/1728404476')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=rG11j6ssR7E&si=vn77JR7wu7018yBN')">youtube</a>
+          </li>
+        </ul>
+
+    </ul>
+  </li>
+  <li></li>
+</ul>
+    </div>
+    <div id="mzodal2"><a id="quitmz"  href="#">×</a><ul id="myUL">
+  <li><span class="caret caret-down">Experience Expo (Music for Runway Shows)</span>
+    <ul class="nested active">
+      <li class="applinks">
+        <a onclick="window.open('https://open.spotify.com/album/3ZOsbqsJPDDgUHtcxnQOlG?si=sxsfzdfMRUqVFWWGVDz-bw')">spotify</a>
+        <a onclick="window.open('https://music.apple.com/us/album/experience-expo-music-for-runway-shows/1731687009')">apple</a>
+        <a onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_kaQqpXh0LBUe2epgMEBJMAXBjhnlO1kDA&si=05LD-b4R9HVP9Wyc')">youtube</a>
+      </li>
+            <li><span class="caret">Experience K (Welcome)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/08g9ZGeHUVBi6fxKSHsImU?si=d75f181f66ff495b')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-k-welcome/1731687010')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=NsGHEOXjEBQ&si=k6-NaHFIEqb-LFj0')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+      <li><span class="caret">Experience V</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/2KTVlcTYYi8jfYKA6gD8JJ?si=0eb48ae249494e6e')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-v/1731687011')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=9I9yEu6wEeM&si=f7SYlgM6tbqj3aRC')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+ <li><span class="caret">Experience I (Café)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3SLA8xE8rdhVJtrpHrI9DS?si=f850306541414b1c')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-i-caf%C3%A9/1731687012')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=TbsAET7oBro&si=hV8JHn1fAPaKxEpN')">youtube</a>
+          </li>
+        </ul>
+      </li>
+       <li><span class="caret">Experience S</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3G6OI3KM86er7HhhgYRjx2?si=ba8f8385d79847ac')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-s/1731687013')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=XfQE-dmS1Ns&si=feFcd05UH4SPCkh0')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">Experience I (2)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/4U3PQ1h8Q6Ky0yUCHweNW5?si=225443b58f8249dc')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-i-2/1731687014')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=XfQE-dmS1Ns&si=feFcd05UH4SPCkh0')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Experience O (Gr***'s Lullaby)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/7mHpgnJ0cWR9c9s6qFSBfU?si=763d7e33cb014e4a')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-o-gr-s-lullaby/1731687015')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=m1BQqKeT0e4&si=CHj1fw97o7mxtcCa')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Experience N (Auralfixation) </span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3n1dIJUcTOEql69D9CeC9f?si=92637bbb837842bb')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/experience-n-auralfixation/1731687016')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=rBLonErZB10&si=2Hb5X9RJEKVvGNyB')">youtube</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+  <li></li>
+</ul>2022 </div>
+    <div id="mzodal3"><a id="quitmz"  href="#">×</a><ul id="myUL">
+  <li><span class="caret caret-down">s'GR</span>
+    <ul class="nested active">
+      <li class="applinks">
+<a onclick="window.open('https://open.spotify.com/album/7w8ypLZgCuyO3ro5nJr7PG?si=-_rUOBJ_SD-DWrcTJhgXiQ')">spotify</a> <a onclick="window.open('https://music.apple.com/us/album/sgr/1731634097')">apple</a> <a onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_l2zufDBO85gntKzLh92Rf8ket2WnH5HNg&si=Iwj_qPl6NNOUcvoN')">youtube</a>
+      </li>
+            <li><span class="caret">Check Me Out</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/4SryuiFaa1shpliUJnGP0i?si=608085be37be4459')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/check-me-out/1731634100')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=coe9GG5YGaI&si=bp90ywjMgnuw2Egh')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+      <li><span class="caret">Confused</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/6IIRUpTuvX6BhB9xQdZXiX?si=17b848de42a54261')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/confused/1731634101')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=hKnExKIaikI&si=GRu6PygeXGSFJbua')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+ <li><span class="caret">No Say</span>
+        <ul class="nested">
+          <li class="applinks"> 
+            <a onclick="window.open('https://open.spotify.com/track/6FwEIvWGxRr9ZickrS0cAB?si=ce3d46385d3c40a9')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/no-say/1731634102')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=DfIZyvx0lPg&si=yxtnDOivWBxQS9JN')">youtube</a>
+          </li>
+        </ul>
+      </li>
+       <li><span class="caret">Coming 2</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/5a39TCVNqYfv81GvTrieTs?si=817a2407e6c94bc6')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/coming-2/1731634103')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=xPJFIXbOobU&si=yrTeNcPMFLJaoRpL')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">A Prayer (TAGWWL)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/6Oq0cCI01GWHw5tg8mq2w1?si=28cb128d61774f18')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/a-prayer-tagwwl/1731634104')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=MMv_U6SocV0&si=RxANnNewYVgfprhE')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Withdrawals</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/1YCu67gyJr8crEfSm44qZc?si=01c52ff145da4f05')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/withdrawals/1731634105')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=57U5gs9zLhg&si=9uLJLgFtCzT85KCi')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">GUILLOTINE</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/5vJnM3uqesj9FoTe4NnEZg?si=3d88dad7549f4a77')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/guillotine/1731634106')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=ZjUPh6wqMdE&si=ZHiTjWfR09KAYgeM')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">Coming 2 - Reprise</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/0UelxExWoUjk3LTXXLeVoE?si=014b097cdbc24a29')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/coming-2-reprise/1731634107')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=lZulRRBOIq0&si=VKsoKvshYTMVwDd3')">youtube</a>
+          </li>
+        </ul>
+      </li>
+
+    </ul>
+  </li>
+  <li></li>
+</ul>2023 </div>
+	<div id="mzodal4"><a id="quitmz"  href="#">×</a>2024 </div>
+    <div id="mzodal5"><a id="quitmz"  href="#">×</a>Photoshop </div>	
+    <div id="mzodal6"><a id="quitmz"  href="#">×</a>Scans </div>
+	<div id="mzodal7"><a id="quitmz"  href="#">×</a>2025 </div>	
+    <div id="mzodalSG"><a id="quitmz"  href="#">×</a><ul id="myUL">
+  <li><span class="caret caret-down">Stageplay</span>
+    <ul class="nested active">
+      <li class="applinks">
+<a onclick="window.open('https://open.spotify.com/album/2zaZT5Grb3tfLD2ckmgNIO?si=qB2AHhIqSgy1IUS7blGk6A')">spotify</a> <a onclick="window.open('https://music.apple.com/us/album/stageplay/1785369298')">apple</a> <a onclick="window.open('https://music.youtube.com/playlist?list=OLAK5uy_kx1SrPlDrLWDrUWvGSX67I2USQBScPsuU&si=lSE4Bex1sKDA6u4i')">youtube</a>
+      </li>
+            <li><span class="caret">surviving quinn churchill</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/1eKzHvZbeqX8aZpbemAWlk?si=4b1688aee6254501')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/surviving-quinn-churchill/1785369299')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=-Vx55YCJM50&si=TMT4RnfdZjvbXzct')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+      <li><span class="caret">till i black</span>
+        <ul class="nested">
+                    <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3xVb2s76EWb0ulUcwJCS3K?si=f69adbfcc7024011')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/till-i-black/1785369300')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=ugptNY2BtqU&si=SeqEP1aYFjarfTC3')">youtube</a>
+          </li>
+                  </ul>
+      </li>
+ <li><span class="caret">en-gb</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/1wnEOHoUxCHZSbWKRMIqVp?si=2107012ee04540a7')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/en-gb/1785369302')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=lVoKpHaDur4&si=l7-in6hGFRnXf7Z3')">youtube</a>
+          </li>
+        </ul>
+      </li>
+       <li><span class="caret">fuck all</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/0NEyTBUQjBSv4P4poAtHzo?si=0fb8046b5a7d4d7a')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/f-k-all/1785369304')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=PvZSFlEpIV4&si=Tx_5r-3zKpJkxVNa')">youtube</a>
+          </li>
+        </ul>
+      </li>
+      <li><span class="caret">2421 (scrapped)</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/2T26O6gCEIG3j4BFdvTUfV?si=106055c3b57646f4')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/2421-scrapped/1785369305')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=4sKOUAC_PpU&si=-JS5uLa_bSYc3uWb')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">castro freestyle</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/6czchbu0ZV4qMs8Sg3SwYW?si=ab2b192a7c554495')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/castro-freestyle/1785369306')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=u_JMJYtWgtU&si=OzoHDOqsnAm4UofD')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">actual hell</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/2iFVPwOviJcpdMh4ls6XBr?si=becd053f844c48e5')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/actual-hell/1785369307')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=s5QwPgv0pm8&si=iN0GYFJrUcDwZHQh')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">feliz navidad</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/7KncjDRxJstiqQKHi6zt5O?si=c0271b2ef5b143d6')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/feliz-navidad/1785369308')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=0SEK0I5vvX8&si=2mPIHxUOxvsADtw1')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">im da dj</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/3Ol1DVqeWChAGu8o2gbWM8?si=26f7bf70b988484c')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/im-da-dj/1785369309')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=ZoBE0vdVQCU&si=BjxQgwrlthTJzhnD')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">limerence w emi</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/666uILjbNJzdPYhs7OCGm2?si=57c4986682964b9a')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/limerence-w-emi/1785369310')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=3oruP6RW5BY&si=VlqvO1VLJz1FQBKq')">youtube</a>
+          </li>
+        </ul>
+      </li>
+            <li><span class="caret">mime act</span>
+        <ul class="nested">
+          <li class="applinks">
+            <a onclick="window.open('https://open.spotify.com/track/6Wx9cBw1aAegBbVplw8lkc?si=fe470b35fd154ce1')">spotify</a>
+            <a onclick="window.open('https://music.apple.com/us/song/mime-act/1785369311')">apple</a>
+            <a onclick="window.open('https://music.youtube.com/watch?v=__0qM--STCk&si=sTwFsbJjz_jbv1m7')">youtube</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li></li>
+</ul>
+Contact LCTapps </div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function gSlides() {
+  window.open("https://docs.google.com/presentation/");
+}
+
+function gDrive() {
+  window.open("https://drive.google.com/drive/");
+}
+
+function gMail() {
+  window.open("https://mail.google.com/mail/");
+}
+
+function gSearch() {
+  window.open("https://google.com/");
+}
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function crosCalc() {
+  window.open("https://calculator.apps.chrome/");
+}
+
+function ccsdInstructure() {
+  window.open("https://msccsd.instructure.com/");
+}
+	
+function flockIm() {
+  window.open("https://web.flock.com/");
+}
+</script>
+
+
+    <!-- <div class="numb">
         <div onclick="" class="btn1"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
         <div onclick="" class="btn2"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
         <div onclick="" class="btn3"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
-    </div>
+    </div> -->
         </div>
 </body>
 </html>

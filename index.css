@@ -1,19 +1,22 @@
 body {
-    align-items: center;
-    color: blue;
- background-image: url(img/pix.jpg);
-background-size: cover;
-background-attachment: fixed;
-      mix-blend-mode: darken;
-      isolation:auto;
-    margin: auto;
-    overflow: hidden;
-    
-
- 
+  align-items: center;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;
+  background-image: url('img/pix.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  mix-blend-mode: darken;
+  isolation:auto;
+  margin: auto;
+  font-family: 'Sahadeva Regular', Arial;
 }
 
-* {
+
+body::-webkit-scrollbar { 
+    display: none;  /* Older Safari and Chromium */
+}
+
+* :not([id^=mzodal]){
         mix-blend-mode:darken;
 }
 
@@ -42,7 +45,7 @@ transform: skew(4deg, -3.2deg);
     align-content: center;
     float: left;
     width: 25%;
-    height: 50%;
+    height: 30%;
     font-size: 60px;
     color: rgb(5, 5, 5);
     background-color: rgb(255, 255, 255);
@@ -64,7 +67,7 @@ z-index: 2;
 .out {
   max-width: 60%;
   margin: auto;
-  height: 20%;
+  height: 30%;
 }
 
 .btn1 {
@@ -127,3 +130,11 @@ transform: skew(4deg, -3.2deg);
 .pixs {
 
 }
+
+@font-face {
+  font-family: "Sahadeva Regular";
+  font-style: normal;
+  font-weight: 100;
+  src: url(fonts/Sahadeva/sahadeva.ttf);
+}
+
