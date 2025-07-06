@@ -39,21 +39,7 @@ transform: skew(4deg, -3.2deg);
   
 }
 
-.btn1, .btn2, .btn3 {
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.075);
-    align-content: center;
-    float: left;
-    width: 25%;
-    height: 29%;
-    font-size: 60px;
-    color: rgb(5, 5, 5);
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    background-position: center;  
-z-index: 0;
 
-}
 
 .screen  {
  background-image: url(img/pix.jpg);
@@ -67,7 +53,34 @@ z-index: 2;
 .out {
   max-width: 60%;
   margin: auto;
-  height: 29%;
+  height: 31%;
+}
+
+    	[class^=btn] {
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.075);
+    align-content: center;
+    float: left;
+    width: 25%;
+    height: 29%;
+    font-size: 60px;
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    background-position: center;  
+z-index: 0;
+	}
+
+      	[class^=btn] .out:hover {
+          opacity: 85%;
+cursor:pointer;
+filter:blur(1.5px);
+background-size: cover;
+  border-bottom: 4px solid;
+        }
+
+.btn4 .out {
+ height: 77%;
 }
 
 .btn1 {
@@ -85,28 +98,14 @@ background-image: url(img/more2.jpg);
 background-size: cover;
 }
 
-.btn1 .out:hover {
-opacity: 85%;
-cursor:pointer;
-background-size:cover;
-  border-bottom: 4px solid;
-filter:blur(1.5px);
+.btn4 {
+  background-image: url("img/othervisual.jpg");
+  background-size: cover;
 }
 
-.btn2 .out:hover {
-opacity: 85%;
-cursor:pointer;
-filter:blur(1.5px);
-background-size: cover;
-  border-bottom: 4px solid;
-}
-
-.btn3 .out:hover {
-opacity: 85%;
-cursor:pointer;
-filter:blur(1.5px);
-background-size: cover;
-  border-bottom: 4px solid;
+.btn5 {
+  background-image: url("img/fashion.jpg");
+  background-size: cover;
 }
 
 .qc {

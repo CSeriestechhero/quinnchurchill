@@ -1,19 +1,334 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>quinn churchill - films</title>
     	<script src="index.js"></script>
         <link rel="stylesheet" type="text/css" href="index.css" />
+        <style>
+
+ul, #myUL {
+  list-style-type: none;
+  cursor: pointer;
+  font-size: 40px;
+  z-index: 101;
+}
+
+
+#myUL a, li{
+    z-index: 99999;
+}
+
+.applinks {
+    font-size: 35px;
+    line-height: none;
+    font-weight: 700;
+    
+}
+
+#myUL {
+  margin: 6%;
+  padding: 0;
+  color: inherit;
+  -moz-transform: skew(4deg, -3.2deg);
+-webkit-transform: skew(4deg, -3.2deg);
+-o-transform: skew(4deg, -3.2deg);
+-ms-transform: skew(4deg, -3.2deg);
+transform: skew(4deg, -3.2deg);
+}
+
+#myUL a {
+        text-decoration: none !important;
+        color: inherit;
+}
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+
+}
+
+.caret::before {
+  font-size: small;
+  vertical-align:middle;
+    content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+  color: inherit;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
+[id^=quitmz] {
+    font-size: 3em;
+    top: 2px;
+    right: 25px;
+    z-index: 99998;
+    position: fixed;
+    cursor:pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+	[id^=mzodal] {
+		display: none;
+		position: fixed;
+
+		font-family: 'Sahadeva Regular', Roboto, Arial, sans-serif;
+
+		background-color: #ffffff;
+  		color: #000;
+        overflow-y: scroll;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+	input[type=checkbox] {
+		position: absolute;
+		clip: rect(0 0 0 0);
+	}
+
+	#mzodalCREDITS:target {
+		display: block;
+		z-index: 100;
+			min-height: 3em;
+			min-width: 5em;
+			font-family: 'Google Sans', Roboto, Arial, sans-serif;
+			color: #fff;
+			background-color: #000000;
+			height: 40%;
+			Width: 60%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+	}
+
+	[id^=mzodal] a {
+		float: inherit;
+	}
+
+	[id^=mzodal]:target {
+		display: block;
+		z-index: 100;
+        background-color: #000;
+                  background-image: url('img/pix.jpg');
+  background-size: cover;
+  isolation: isolate;
+  background-attachment: fixed;
+	}
+
+    	[id^=mzodal]:target ul {
+		
+    
+	}
+
+	.bagel {
+		float: right !important;
+		top: 0px;
+	}
+
+	/* Style the button */
+	button {
+		border: none;
+		background-color: transparent;
+
+	}
+
+    .ipage::-webkit-scrollbar {
+        display: none !important;
+    }
+
+    .ipage {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+</style>
+
 </head>
 <body>
         <div class="screen">
-        <div class="qc"></div>
+        <div style="cursor:pointer;" onclick="window.location.href = 'index.html'" class="qc"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://raw.githubusercontent.com/CSeriestechhero/kiosk-setup/main/services/redir/banish.js"></script>
 
-        
+<ul id="myUL">
+
+  <li><span class="caret">films</span>
+    <ul class="nested">
+      <li><span class="caret"><a href="#mzodalSG"><b>black palms</b>, quinn churchill (dec 2021)</a></span>
+
+      </li>
+      <li><span class="caret"><a href="#mzodal1"><b>porcelain vampires</b>, elliot eden & quinn churchill (sep 2022)</a></span>
+
+      </li>
+            <li><span class="caret"><a href="#mzodal2"><b>processdivergent</b>, quinn churchill (dec 2022)</a></span>
+
+      </li>
+            <li><span class="caret"><a href="#mzodal3"><b>where the dogs go</b>, quinn churchill (feb 2023)</a></span>
+</li>
+      </li>
+            <li><span class="caret"><a href="#mzodal4"><b>untitled</b>, quinn churchill (may 2023)</a></span>
+</li>
+      </li>
+            <li><span class="caret"><a href="#mzodal5"><b>my favorite killer variety hour</b>, quinn churchill (sep 2023)</a></span>
+</li>
+      </li>
+            <li><span class="caret"><a href="#mzodal6"><b>dishonourable discharge</b>, quinn churchill (dec 2023)</a></span>
+</li>
+    </ul>
+  </li>
+
+  <li></li>
+</ul>
+    <!--windowing system-->
+    <div id="mzodal1"><a id="quitmz" href="#">×</a>
+<iframe class="ipage" src="https://www.youtube-nocookie.com/embed/GOfn74eJI-Q?si=lu9g7CIYZXHDf8I7" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+    <div id="mzodal2"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/UfXh44SxvpM?si=ZJCRQl9R7o-xOty1" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+    <div id="mzodal3"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/nJAFBhd-yZ8?si=CjhTnK2TwPQiQu9X" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+</div>
+	<div id="mzodal4"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/t1xEpzbaocw?si=6iYYkEoHdGXu4XYS" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+    <div id="mzodal5"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/UC3PWAbLgLo?si=yamxr9yBRoZ6u1K1" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>	
+    <div id="mzodal6"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/P4E2Oo69bPk?si=uL-KXMTvk1BytPiO" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+	<div id="mzodal7"><a id="quitmz"  href="#">×</a></div>	
+    <div id="mzodal8">
+
+                <div style="cursor:pointer;" onclick="window.location.href = 'index.html'" class="qc"></div>
+<ul id="myUL">
+
+    <br>
+  <li><span class="caret caret-down">films</span>
+    <ul style="font-size: 25px !important;" class="nested active">
+      <li><span class=""><a target="_blank" href="https://youtu.be/cQauJihSiqI?si=tD5GHO2Gyz__p2PB"><b>black palms</b>, quinn churchill (dec 2021)</a></span>
+
+      </li>
+      <li><span class=""><a target="_blank" href="https://youtu.be/GOfn74eJI-Q?si=2aBDzNZlYuYblxm4"><b>porcelain vampires</b>, elliot eden & quinn churchill (sep 2022)</a></span>
+
+      </li>
+            <li><span class=""><a target="_blank" href="https://youtu.be/UfXh44SxvpM?si=SP_uQ4NIdwijElo-"><b>processdivergent</b>, quinn churchill (dec 2022)</a></span>
+
+      </li>
+            <li><span class=""><a target="_blank" href="https://youtu.be/nJAFBhd-yZ8?si=v_Bjd0QvQDnoAB4b"><b>where the dogs go</b>, quinn churchill (feb 2023)</a></span>
+</li>
+      </li>
+            <li><span class=""><a target="_blank" href="https://youtu.be/t1xEpzbaocw?si=k7y76_rZevFyD_uq"><b>untitled</b>, quinn churchill (may 2023)</a></span>
+</li>
+      </li>
+            <li><span class=""><a target="_blank" href="https://youtu.be/UC3PWAbLgLo?si=bSjb5p69S2mJHlnd"><b>my favorite killer variety hour</b>, quinn churchill (sep 2023)</a></span>
+</li>
+      </li>
+            <li><span class=""><a target="_blank" href="https://youtu.be/P4E2Oo69bPk?si=fbhqlSQngN0TJUAc"><b>dishonourable discharge</b>, quinn churchill (dec 2023)</a></span>
+</li>
+    </ul>
+  </li>
+
+  <li></li>
+</ul>
+        <span>you're on mobile, if you want to watch the films inside of this website instead of youtube, switch to "Desktop Mode" in your browser</span>
+    </div>
+    <div id="mzodalSG"><a id="quitmz"  href="#">×</a>
+    <iframe class="ipage" src="https://www.youtube-nocookie.com/embed/cQauJihSiqI?si=Kj8kXjwvbh9sVPcq" allowtransparency="true" style="background-color: #000 !important; color: #af0a0a !important; position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index: 0;" frameborder="no" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" scrolling="yes"></iframe>
+    </div>
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function gSlides() {
+  window.open("https://docs.google.com/presentation/");
+}
+
+function gDrive() {
+  window.open("https://drive.google.com/drive/");
+}
+
+function gMail() {
+  window.open("https://mail.google.com/mail/");
+}
+
+function gSearch() {
+  window.open("https://google.com/");
+}
+
+function gDocs() {
+  window.open("https://docs.google.com/document/");
+}
+
+function crosCalc() {
+  window.open("https://calculator.apps.chrome/");
+}
+
+function ccsdInstructure() {
+  window.open("https://msccsd.instructure.com/");
+}
+	
+function flockIm() {
+  window.open("https://web.flock.com/");
+}
+
+const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+if (isMobile) {
+  console.log("mobile true")
+  window.location.replace("#mzodal8")
+
+}
+  else {
+    window.location.replace("#")
+  }
+</script>
+
+
     <!-- <div class="numb">
-        <div onclick="" class="btn1"><div class="out">filmfilmfilmfilmfilmflimfilmflimfilfmilmfilm⠀⠀⠀</div></div>
-        <div onclick="" class="btn2"><div class="out">filmfilmfilmfilmfilmflimfilmflimfilfmilmfilm⠀⠀⠀</div></div>
-        <div onclick="" class="btn3"><div class="out">filmfilmfilmfilmfilmflimfilmflimfilfmilmfilm⠀⠀⠀</div></div>
+        <div onclick="" class="btn1"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
+        <div onclick="" class="btn2"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
+        <div onclick="" class="btn3"><div class="out">musicmusicmusicmusicmuismucismucismucismucis⠀⠀⠀</div></div>
     </div> -->
         </div>
 </body>
