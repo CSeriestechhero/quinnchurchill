@@ -39,7 +39,10 @@ transform: skew(4deg, -3.2deg);
   
 }
 
-
+.ipage {
+  mix-blend-mode: normal !important;
+  background-blend-mode: normal !important;
+}
 
 .screen  {
  background-image: url(img/pix.jpg);
