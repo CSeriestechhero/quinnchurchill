@@ -85,6 +85,10 @@ background-size: cover;
  height: 77%;
 }
 
+.btn7 .out:hover {
+ max-width: 89%;
+}
+
 .btn1 {
 background-image: url(img/music2.jpg);
 background-size:cover;
@@ -112,6 +116,12 @@ background-size: cover;
 
 .btn6 {
   background-image: url("img/contact.jpg");
+  background-size: cover;
+}
+
+
+.btn7 {
+  background-image: url("img/modeling.jpg");
   background-size: cover;
 }
 

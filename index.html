@@ -22,13 +22,31 @@
         <div onclick="window.location = 'music.html'" class="btn1"><div class="out">⠀⠀⠀</div></div>
         <div onclick="window.location = 'films.html'" class="btn2"><div class="out">⠀⠀⠀</div></div>
         <div onclick="window.location = 'more.html'" class="btn3"><div class="out">⠀⠀⠀</div></div>
-        
+        <span id="break"></span>
+        <div onclick="window.location = 'modeling.html'" class="btn7"><div class="out"></div></div>   
+                
     </div>
     
                 <!-- img style="z-index:-1;position:fixed; left: 20%; top:20%;" src="img/coconut.jpg"> <img -->    
 
             </div>
 
+<script>
 
+                        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile) {
+
+                var cols = document.querySelectorAll('[class^=btn]'); 
+                    for(i = 0; i < cols.length; i++) {
+                       cols[i].style.width = '20%';
+                       cols[i].style.height = '13%';
+  }
+                  console.log("mobile true");
+
+            }
+            else {
+                console.log("nada")
+            }
+</script>
 </body>
 </html>
